@@ -1,11 +1,23 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
+let votingAge = 37;
+
+if(votingAge => 18){
+  console.log('true');
+};
 
 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
+
+function food(isGood) {
+  return (isGood ? 'eat it' : 'yucky!');
+}
+console.log(food(true));
+console.log(food(false));
+
 
 
 
@@ -13,20 +25,28 @@
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
+console.log(Number("1999"));
 
 
 
 
 //Task d: Write a function to multiply a*b 
 
-
-
+function multNumber(num1, num2){
+ let num3 =  num1 * num2;
+ return num3; 
+};
+console.log(multNumber(3, 5));
 
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
-//write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
+// write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
+function dogYearAge(myAge){
+return dogYear = myAge *7;
+}
+console.log(dogYearAge(10));
 
 
 
@@ -34,7 +54,22 @@
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder 
 //takes weight in pounds and age in years (note if the dog is a puppy the age will be a decimal) and returns the number of pounds of raw food to feed in a day.
-
+function dogFeeder(weightPounds, ageYears){
+  if(ageYears > 1){
+    if(weightPounds > 15){
+      return rawFood = weightpounds *.02;
+    }else if(weightPounds >10){
+      return rawFood = weightpounds *.03;
+    }else if(weightPounds >5){
+      return rawFood = weightpounds *.04;
+    }else {
+      return rawFood = weightpounds *.05;
+    }
+  // }// if ageyears >=1 end
+  // else{ //dog is puppy less than a year old
+  //   if( )
+  }
+};
 //feeding requirements
 // adult dogs at least 1 year 
 // up to 5 lbs - 5% of their body weight
@@ -111,8 +146,3 @@
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
-
-
-
-
-
